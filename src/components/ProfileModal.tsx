@@ -253,7 +253,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
             {user.bio && (
               <div className="card" style={{ padding: 12 }}>
                 <span style={{ fontSize: 12.5, fontWeight: 700, color: 'var(--text-main)', display: 'block', marginBottom: 4 }}>
-                  Mot doux pour la colloc :
+                  Bio / Remarques :
                 </span>
                 <p style={{ fontSize: 13.5, fontStyle: 'italic', color: 'var(--text-muted)' }}>
                   « {user.bio} »

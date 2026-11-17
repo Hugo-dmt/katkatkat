@@ -69,23 +69,21 @@ export const PostFeed: React.FC<PostFeedProps> = ({
       {/* BBS Hero Header */}
       <div className="bbs-hero">
         <div className="bbs-hero-title">
-          <Sparkles size={22} color="#fef3c7" />
-          <span>katkatkat • Le BBS officiel des Anciens Collocs</span>
+          <span>katkatkat • Kot 444</span>
         </div>
         <p className="bbs-hero-desc">
-          Bienvenue dans notre repaire annuel. Ici, on centralise les adresses postales de la bande, 
-          on vote pour nos chalets de Noël, et on ne perd plus aucun anniversaire !
+          Hub privé des 30 anciens du 444 : adresses postales, sondages et sélection de la maison pour le week-end de Noël.
         </p>
 
         <div className="bbs-hero-stats">
           <div className="hero-stat-chip">
-            👥 <span>{allUsers.length} collocataires enregistrés</span>
+            👥 <span>{allUsers.length} membres enregistrés</span>
           </div>
           <div className="hero-stat-chip">
-            🏡 <span>{housePosts.length} maisons en lice pour Noël</span>
+            🏡 <span>{housePosts.length} gîtes proposés</span>
           </div>
           <div className="hero-stat-chip">
-            🎄 <span>Rendez-vous annuel en préparation</span>
+            🎄 <span>Week-end de Noël annuel</span>
           </div>
         </div>
       </div>
@@ -97,7 +95,7 @@ export const PostFeed: React.FC<PostFeedProps> = ({
           <div
             className="card"
             style={{
-              padding: '14px 18px',
+              padding: '12px 16px',
               marginBottom: 16,
               display: 'flex',
               alignItems: 'center',
@@ -113,7 +111,7 @@ export const PostFeed: React.FC<PostFeedProps> = ({
                 alignItems: 'center',
                 gap: 10,
                 background: 'var(--bg-muted)',
-                padding: '10px 14px',
+                padding: '9px 14px',
                 borderRadius: 'var(--radius-full)',
                 cursor: 'pointer',
                 color: 'var(--text-muted)',
@@ -129,7 +127,7 @@ export const PostFeed: React.FC<PostFeedProps> = ({
                 alt=""
                 className="avatar-sm"
               />
-              <span>Quoi de neuf pour la colloc, {currentUser.nickname || currentUser.firstName} ?</span>
+              <span>Écrire un message pour le groupe...</span>
             </div>
 
             <div style={{ display: 'flex', gap: 6 }}>

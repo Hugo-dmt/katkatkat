@@ -64,11 +64,11 @@ export const HousesHub: React.FC<HousesHubProps> = ({
       <div className="card" style={{ marginBottom: 24, padding: 24, background: '#fff' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
           <div>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 700, color: 'var(--pine-900)' }}>
-              🏡 Grand Week-end de Noël : Choix de la Maison
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 22, fontWeight: 700, color: 'var(--pine-900)' }}>
+              🏡 Week-end de Noël : Choix du gîte
             </h1>
-            <p style={{ fontSize: 14, color: 'var(--text-muted)', marginTop: 4 }}>
-              On rassemble la trentaine de collocs ! Proposez vos trouvailles, comparez les tarifs et votez pour votre coup de cœur.
+            <p style={{ fontSize: 13.5, color: 'var(--text-muted)', marginTop: 4 }}>
+              Propositions de logements pour les 30 anciens du 444 et votes de l'équipe.
             </p>
           </div>
 

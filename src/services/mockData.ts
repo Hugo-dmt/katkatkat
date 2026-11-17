@@ -188,19 +188,19 @@ export const INITIAL_POSTS: Post[] = [
     authorAvatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     createdAt: '2024-11-10T14:30:00.000Z',
     type: 'announcement',
-    title: '🎉 Bienvenue sur katkatkat, le repaire officiel des 30 collocs !',
-    content: `Salut tout le monde ! 
+    title: 'Bienvenue sur katkatkat (Kot 444)',
+    content: `Salut tout le monde !
 
-Après des années de galères sur WhatsApp ("C'est quoi l'adresse de Sarah déjà ?", "On va où pour Noël ?", "Qui a les dates ?"), on a enfin notre plateforme privée.
+Pour éviter les galères habituelles sur WhatsApp ("C'est quoi l'adresse de Sarah ?", "Quel gîte pour le week-end ?", "Qui a les dates ?"), voici notre espace privé.
 
-Ce que vous pouvez faire dès maintenant :
-1. **Complétez votre profil** (adresse postale pour les cartes de vœux/mariages, tél, date d'anniv)
-2. **Exportez tous les anniversaires** en un clic sur votre Google Calendar / Apple Calendar
-3. **Votez pour la maison de notre week-end de Noël** dans l'onglet Maisons ou ci-dessous
-4. **Proposez des sondages** ou postez vos nouvelles !
+Fonctionnalités :
+1. **Adresses complètes & profils** (tél, adresses pour courriers/cartes, dates d'anniversaires)
+2. **Export des anniversaires** en un clic vers votre agenda (.ics)
+3. **Propositions & votes des gîtes** pour le grand week-end de Noël
+4. **Sondages et messages** pour caler l'organisation.
 
-Rien n'est public, tout reste strictement entre nous. Bon séjour sur katkatkat ! 🎄✨`,
-    tags: ['Annonce', 'Colloc', 'Noël'],
+Rien n'est public, accès strictement réservé aux anciens du 444.`,
+    tags: ['Organisation', 'Kot444', 'Noël'],
     isPinned: true,
     likes: ['user-camille', 'user-thomas', 'user-sarah', 'user-antoine', 'user-lea'],
     comments: [

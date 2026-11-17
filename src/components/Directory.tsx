@@ -50,11 +50,11 @@ export const Directory: React.FC<DirectoryProps> = ({ users, onOpenProfile }) =>
       <div className="card" style={{ marginBottom: 24, padding: 24, background: '#fff' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
           <div>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 700, color: 'var(--pine-900)' }}>
-              📖 Trombinoscope & Carnet d'adresses
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 22, fontWeight: 700, color: 'var(--pine-900)' }}>
+              📖 Annuaire & Adresses (Kot 444)
             </h1>
-            <p style={{ fontSize: 14, color: 'var(--text-muted)', marginTop: 4 }}>
-              Retrouvez facilement les adresses, numéros, anniversaires et régimes alimentaires de toute la colloc.
+            <p style={{ fontSize: 13.5, color: 'var(--text-muted)', marginTop: 4 }}>
+              Coordonnées, adresses postales et anniversaires des 30 anciens du 444.
             </p>
           </div>
 

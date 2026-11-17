@@ -53,11 +53,11 @@ export const BirthdaysHub: React.FC<BirthdaysHubProps> = ({ users, onOpenProfile
       <div className="card" style={{ marginBottom: 24, padding: 24, background: '#fff' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
           <div>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 700, color: 'var(--pine-900)' }}>
-              🎂 Calendrier des Anniversaires de la Colloc
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 22, fontWeight: 700, color: 'var(--pine-900)' }}>
+              🎂 Calendrier des Anniversaires (Kot 444)
             </h1>
-            <p style={{ fontSize: 14, color: 'var(--text-muted)', marginTop: 4 }}>
-              Fini les anniversaires oubliés ! Synchronisez l'ensemble des dates de naissance en 1 clic dans votre agenda.
+            <p style={{ fontSize: 13.5, color: 'var(--text-muted)', marginTop: 4 }}>
+              Export direct de tous les anniversaires vers Google Calendar, Apple Calendar ou Outlook.
             </p>
           </div>
 

@@ -76,7 +76,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onSuccess }) => {
             katkatkat
           </h1>
           <p style={{ fontSize: 13.5, color: 'var(--text-muted)' }}>
-            Espace privé et sécurisé des anciens colocataires
+            Espace privé des 30 anciens du Kot 444
           </p>
           <div style={{
             display: 'inline-flex',
@@ -268,7 +268,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onSuccess }) => {
             </div>
 
             <button type="submit" className="btn-berry" style={{ width: '100%', marginTop: 8 }}>
-              Rejoindre la bande de katkatkat
+              Créer mon compte (Kot 444)
             </button>
 
             <div style={{ textAlign: 'center', marginTop: 14, fontSize: 13 }}>

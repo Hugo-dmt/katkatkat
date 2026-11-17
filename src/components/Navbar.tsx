@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               }}
             />
             <span>katkatkat</span>
-            <span className="brand-badge">Colloc</span>
+            <span className="brand-badge">Kot 444</span>
           </div>
 
           {/* Desktop Navigation Tabs */}

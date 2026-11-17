@@ -79,11 +79,11 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ currentUser, onSav
       <div className="card" style={{ padding: 28, background: '#fff' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 }}>
           <div>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 700, color: 'var(--pine-900)' }}>
-              👤 Mon Profil Collocataire
+            <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 22, fontWeight: 700, color: 'var(--pine-900)' }}>
+              👤 Mon Profil
             </h1>
             <p style={{ fontSize: 13.5, color: 'var(--text-muted)' }}>
-              Ces informations sont visibles par les 30 colocataires de katkatkat.
+              Visible par les membres du 444.
             </p>
           </div>
 
@@ -361,11 +361,11 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ currentUser, onSav
 
           {/* Bio */}
           <div className="form-group">
-            <label className="form-label">Petite bio / mot pour la communauté</label>
+            <label className="form-label">Bio / Remarques (optionnel)</label>
             <textarea
               className="form-textarea"
               rows={3}
-              placeholder="Un mot nostalgique, une réplique culte de la colloc..."
+              placeholder="Infos pratiques, réplique du 444..."
               value={bio}
               onChange={(e) => setBio(e.target.value)}
             />

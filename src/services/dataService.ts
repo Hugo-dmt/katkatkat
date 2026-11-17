@@ -2,10 +2,10 @@ import { UserProfile, Post, Comment } from '../types';
 import { INITIAL_PROFILES, INITIAL_POSTS } from './mockData';
 
 // Local storage keys
-const STORAGE_USERS_KEY = 'katkatkat_users_v1';
-const STORAGE_POSTS_KEY = 'katkatkat_posts_v1';
-const STORAGE_CURRENT_USER_KEY = 'katkatkat_current_user_v1';
-const STORAGE_FIREBASE_CONFIG_KEY = 'katkatkat_firebase_config_v1';
+const STORAGE_USERS_KEY = 'katkatkat_users_v2';
+const STORAGE_POSTS_KEY = 'katkatkat_posts_v2';
+const STORAGE_CURRENT_USER_KEY = 'katkatkat_current_user_v2';
+const STORAGE_FIREBASE_CONFIG_KEY = 'katkatkat_firebase_config_v2';
 
 export interface FirebaseConfig {
   apiKey: string;
