@@ -84,7 +84,7 @@ export const FirebaseConfigModal: React.FC<FirebaseConfigModalProps> = ({ onClos
             />
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          <div className="form-grid-2">
             <div className="form-group">
               <label className="form-label">Project ID</label>
               <input
@@ -108,7 +108,7 @@ export const FirebaseConfigModal: React.FC<FirebaseConfigModalProps> = ({ onClos
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          <div className="form-grid-2">
             <div className="form-group">
               <label className="form-label">Storage Bucket</label>
               <input

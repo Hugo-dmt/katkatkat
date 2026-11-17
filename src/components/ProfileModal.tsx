@@ -227,7 +227,7 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
             </div>
 
             {/* Dietary & Drinks */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 14 }}>
+            <div className="form-grid-2" style={{ marginBottom: 14 }}>
               <div className="card" style={{ padding: 12 }}>
                 <span style={{ fontSize: 12.5, fontWeight: 700, color: 'var(--text-main)', display: 'flex', alignItems: 'center', gap: 5 }}>
                   <Utensils size={13} color="var(--amber-700)" />

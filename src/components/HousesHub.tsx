@@ -116,13 +116,14 @@ export const HousesHub: React.FC<HousesHubProps> = ({
 
       {/* Comparison Scorecard Summary */}
       {sortedHouses.length > 0 && (
-        <div className="card" style={{ marginBottom: 24, padding: 18, overflowX: 'auto' }}>
+        <div className="card" style={{ marginBottom: 24, padding: 18 }}>
           <h2 style={{ fontSize: 15, fontWeight: 700, marginBottom: 12, display: 'flex', alignItems: 'center', gap: 6 }}>
             <Sparkles size={16} color="var(--amber-700)" />
             Tableau comparatif rapide
           </h2>
 
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, textAlign: 'left' }}>
+          <div className="table-responsive">
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, textAlign: 'left', minWidth: 600 }}>
             <thead>
               <tr style={{ borderBottom: '2px solid var(--border-light)', color: 'var(--text-muted)' }}>
                 <th style={{ padding: '8px 12px' }}>Chalet / Gîte</th>
@@ -177,6 +178,7 @@ export const HousesHub: React.FC<HousesHubProps> = ({
               })}
             </tbody>
           </table>
+          </div>
         </div>
       )}
 
@@ -204,7 +206,7 @@ export const HousesHub: React.FC<HousesHubProps> = ({
 
             return (
               <div key={post.id} className="card" style={{ padding: 0, overflow: 'hidden' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: h.photos?.length ? '360px 1fr' : '1fr', minHeight: 240 }}>
+                <div className="house-card-layout">
                   {h.photos?.length > 0 && (
                     <div style={{ position: 'relative', height: '100%', minHeight: 220, background: '#000' }}>
                       <img

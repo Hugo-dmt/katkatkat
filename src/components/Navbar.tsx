@@ -24,128 +24,179 @@ export const Navbar: React.FC<NavbarProps> = ({
   onSwitchUser,
 }) => {
   return (
-    <nav className="navbar">
-      <div className="navbar-inner">
-        {/* Brand */}
-        <div 
-          className="navbar-brand" 
-          style={{ cursor: 'pointer' }}
-          onClick={() => setActiveTab('feed')}
-        >
-          <img 
-            src="./logo.jpg" 
-            alt="katkatkat" 
-            style={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover', border: '1.5px solid #fff' }}
-            onError={(e) => {
-              // fallback if image not loaded
-              (e.target as HTMLElement).style.display = 'none';
-            }}
-          />
-          <span>katkatkat</span>
-          <span className="brand-badge">BBS Collocs</span>
-        </div>
-
-        {/* Tabs */}
-        <div className="navbar-tabs">
-          <button
-            className={`nav-tab-btn ${activeTab === 'feed' ? 'active' : ''}`}
+    <>
+      {/* Top Navbar */}
+      <nav className="navbar">
+        <div className="navbar-inner">
+          {/* Brand */}
+          <div 
+            className="navbar-brand" 
+            style={{ cursor: 'pointer' }}
             onClick={() => setActiveTab('feed')}
           >
-            <MessageSquare size={16} />
-            <span>Le Mur</span>
-          </button>
-
-          <button
-            className={`nav-tab-btn ${activeTab === 'directory' ? 'active' : ''}`}
-            onClick={() => setActiveTab('directory')}
-          >
-            <Users size={16} />
-            <span>L'Annuaire</span>
-          </button>
-
-          <button
-            className={`nav-tab-btn ${activeTab === 'houses' ? 'active' : ''}`}
-            onClick={() => setActiveTab('houses')}
-          >
-            <Home size={16} />
-            <span>Maisons Noël</span>
-          </button>
-
-          <button
-            className={`nav-tab-btn ${activeTab === 'birthdays' ? 'active' : ''}`}
-            onClick={() => setActiveTab('birthdays')}
-          >
-            <Calendar size={16} />
-            <span>Annivs</span>
-          </button>
-        </div>
-
-        {/* User Pill & Quick Actions */}
-        <div className="navbar-user">
-          {/* Quick Colloc Switcher for Demo / Multi-test */}
-          <select 
-            value={currentUser.id} 
-            onChange={(e) => onSwitchUser(e.target.value)}
-            style={{
-              background: 'rgba(255,255,255,0.1)',
-              color: '#fff',
-              border: '1px solid rgba(255,255,255,0.2)',
-              borderRadius: '9999px',
-              padding: '4px 8px',
-              fontSize: '12px',
-              outline: 'none',
-              cursor: 'pointer'
-            }}
-            title="Changer de colloc connecté"
-          >
-            {allUsers.map((u) => (
-              <option key={u.id} value={u.id} style={{ color: '#111' }}>
-                👤 {u.firstName} {u.lastName} {u.nickname ? `(${u.nickname})` : ''}
-              </option>
-            ))}
-          </select>
-
-          <div
-            className="user-pill"
-            onClick={() => onOpenProfile(currentUser)}
-            title="Voir mon profil"
-          >
-            <img
-              src={currentUser.avatarUrl || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100'}
-              alt={currentUser.firstName}
-              className="avatar-sm"
+            <img 
+              src="./logo.jpg" 
+              alt="katkatkat" 
+              style={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover', border: '1.5px solid #fff' }}
+              onError={(e) => {
+                (e.target as HTMLElement).style.display = 'none';
+              }}
             />
-            <span>{currentUser.nickname || currentUser.firstName}</span>
+            <span>katkatkat</span>
+            <span className="brand-badge">Colloc</span>
           </div>
 
-          <button
-            className="nav-tab-btn"
-            style={{ padding: '6px 8px' }}
-            onClick={() => setActiveTab('profile')}
-            title="Éditer mon profil"
-          >
-            <User size={16} />
-          </button>
+          {/* Desktop Navigation Tabs */}
+          <div className="navbar-tabs-desktop">
+            <button
+              className={`nav-tab-btn ${activeTab === 'feed' ? 'active' : ''}`}
+              onClick={() => setActiveTab('feed')}
+            >
+              <MessageSquare size={15} />
+              <span>Le Mur</span>
+            </button>
 
-          <button
-            className="nav-tab-btn"
-            style={{ padding: '6px 8px' }}
-            onClick={onOpenSettings}
-            title="Firebase & Paramètres"
-          >
-            <Settings size={16} />
-          </button>
+            <button
+              className={`nav-tab-btn ${activeTab === 'directory' ? 'active' : ''}`}
+              onClick={() => setActiveTab('directory')}
+            >
+              <Users size={15} />
+              <span>L'Annuaire</span>
+            </button>
 
-          <button
-            className="nav-tab-btn"
-            style={{ padding: '6px 8px', color: '#ffb3b5' }}
-            onClick={onLogout}
-            title="Déconnexion"
-          >
-            <LogOut size={16} />
-          </button>
+            <button
+              className={`nav-tab-btn ${activeTab === 'houses' ? 'active' : ''}`}
+              onClick={() => setActiveTab('houses')}
+            >
+              <Home size={15} />
+              <span>Maisons Noël</span>
+            </button>
+
+            <button
+              className={`nav-tab-btn ${activeTab === 'birthdays' ? 'active' : ''}`}
+              onClick={() => setActiveTab('birthdays')}
+            >
+              <Calendar size={15} />
+              <span>Annivs</span>
+            </button>
+          </div>
+
+          {/* User & Actions */}
+          <div className="navbar-user-actions">
+            {/* Desktop Colloc Switcher */}
+            <div className="desktop-only-item">
+              <select 
+                value={currentUser.id} 
+                onChange={(e) => onSwitchUser(e.target.value)}
+                style={{
+                  background: 'rgba(255,255,255,0.1)',
+                  color: '#fff',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  borderRadius: '9999px',
+                  padding: '4px 8px',
+                  fontSize: '12px',
+                  outline: 'none',
+                  cursor: 'pointer'
+                }}
+                title="Changer de colocataire connecté"
+              >
+                {allUsers.map((u) => (
+                  <option key={u.id} value={u.id} style={{ color: '#111' }}>
+                    👤 {u.firstName} {u.nickname ? `(${u.nickname})` : ''}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* User Pill */}
+            <div
+              className="user-pill"
+              onClick={() => onOpenProfile(currentUser)}
+              title="Voir mon profil"
+            >
+              <img
+                src={currentUser.avatarUrl || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100'}
+                alt={currentUser.firstName}
+                className="avatar-sm"
+              />
+              <span>{currentUser.nickname || currentUser.firstName}</span>
+            </div>
+
+            {/* Desktop profile edit button */}
+            <button
+              className="nav-tab-btn desktop-only-item"
+              style={{ padding: '6px 8px' }}
+              onClick={() => setActiveTab('profile')}
+              title="Éditer mon profil"
+            >
+              <User size={16} />
+            </button>
+
+            {/* Settings */}
+            <button
+              className="nav-tab-btn"
+              style={{ padding: '6px 8px' }}
+              onClick={onOpenSettings}
+              title="Configuration Firebase"
+            >
+              <Settings size={16} />
+            </button>
+
+            {/* Logout */}
+            <button
+              className="nav-tab-btn"
+              style={{ padding: '6px 8px', color: '#ffb3b5' }}
+              onClick={onLogout}
+              title="Déconnexion"
+            >
+              <LogOut size={16} />
+            </button>
+          </div>
         </div>
+      </nav>
+
+      {/* Mobile Bottom Navigation Bar */}
+      <div className="bottom-nav">
+        <button
+          className={`bottom-nav-item ${activeTab === 'feed' ? 'active' : ''}`}
+          onClick={() => setActiveTab('feed')}
+        >
+          <MessageSquare size={18} />
+          <span>Le Mur</span>
+        </button>
+
+        <button
+          className={`bottom-nav-item ${activeTab === 'directory' ? 'active' : ''}`}
+          onClick={() => setActiveTab('directory')}
+        >
+          <Users size={18} />
+          <span>Annuaire</span>
+        </button>
+
+        <button
+          className={`bottom-nav-item ${activeTab === 'houses' ? 'active' : ''}`}
+          onClick={() => setActiveTab('houses')}
+        >
+          <Home size={18} />
+          <span>Maisons</span>
+        </button>
+
+        <button
+          className={`bottom-nav-item ${activeTab === 'birthdays' ? 'active' : ''}`}
+          onClick={() => setActiveTab('birthdays')}
+        >
+          <Calendar size={18} />
+          <span>Annivs</span>
+        </button>
+
+        <button
+          className={`bottom-nav-item ${activeTab === 'profile' ? 'active' : ''}`}
+          onClick={() => setActiveTab('profile')}
+        >
+          <User size={18} />
+          <span>Profil</span>
+        </button>
       </div>
-    </nav>
+    </>
   );
 };

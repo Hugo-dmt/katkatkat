@@ -257,7 +257,7 @@ export const CreatePostModal: React.FC<CreatePostModalProps> = ({
           {/* HOUSE SPECIFIC */}
           {type === 'house' && (
             <div style={{ background: 'var(--bg-muted)', padding: 14, borderRadius: 'var(--radius-md)', marginBottom: 16 }}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+              <div className="form-grid-2">
                 <div className="form-group">
                   <label className="form-label">Localisation (Région / Ville)</label>
                   <input
@@ -281,7 +281,7 @@ export const CreatePostModal: React.FC<CreatePostModalProps> = ({
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8 }}>
+              <div className="form-grid-4">
                 <div className="form-group">
                   <label className="form-label">Prix total (€)</label>
                   <input

@@ -175,7 +175,7 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ currentUser, onSav
           </div>
 
           {/* Identity Grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+          <div className="form-grid-3">
             <div className="form-group">
               <label className="form-label">Prénom *</label>
               <input
@@ -211,7 +211,7 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ currentUser, onSav
           </div>
 
           {/* Birthday & Contact */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+          <div className="form-grid-3">
             <div className="form-group">
               <label className="form-label">
                 Date de naissance *
@@ -270,7 +270,7 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ currentUser, onSav
               />
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '120px 1fr 1fr', gap: 10 }}>
+            <div className="form-grid-address">
               <div className="form-group">
                 <label className="form-label">Code postal</label>
                 <input
@@ -307,7 +307,7 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ currentUser, onSav
           </div>
 
           {/* Colloc Details */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          <div className="form-grid-2">
             <div className="form-group">
               <label className="form-label">Années dans la colloc</label>
               <input
@@ -332,7 +332,7 @@ export const ProfileEditor: React.FC<ProfileEditorProps> = ({ currentUser, onSav
           </div>
 
           {/* Dietary & Drinks (Essential for Christmas weekend!) */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          <div className="form-grid-2">
             <div className="form-group">
               <label className="form-label">Régime alimentaire & Allergies</label>
               <input
