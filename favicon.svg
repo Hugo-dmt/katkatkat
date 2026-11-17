@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#1b4332"/>
+  <rect x="5" y="5" width="90" height="90" rx="16" fill="none" stroke="#d4af37" stroke-width="2.5" opacity="0.6"/>
+  <text x="50" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="34" fill="#faf8f5" text-anchor="middle" dominant-baseline="middle" letter-spacing="-1">444</text>
+  <text x="50" y="78" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12" fill="#d4af37" text-anchor="middle" letter-spacing="1">KAT</text>
+</svg>
